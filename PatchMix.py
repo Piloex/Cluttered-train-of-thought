@@ -14,8 +14,8 @@ from PIL import Image
 import torch.distributed as dist
 os.environ['MASTER_ADDR'] = 'localhost'
 os.environ['RANK'] = '0'
-os.environ['MASTER_PORT'] = '12345'
-os.environ['WORLD_SIZE'] = '1'
+os.environ['MASTER_PORT'] = ''
+os.environ['WORLD_SIZE'] = ''
 dist.init_process_group(backend='gloo')
 
 
